@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { useSelector, TypedUseSelectorHook, useDispatch } from "react-redux"
-import counterReducer from "./features/counter"
+import recommendReducer from "./features/recommend"
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer
+    recommend: recommendReducer
   }
 })
 
