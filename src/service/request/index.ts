@@ -26,15 +26,15 @@ class HYRequest {
       }
     )
 
-    this.instance.interceptors.request.use(
-      config.interceptors?.requestSuccessFn,
-      config.interceptors?.requestFailureFn
-    )
+    // this.instance.interceptors.request.use(
+    //   config.interceptors?.requestSuccessFn,
+    //   config.interceptors?.requestFailureFn
+    // )
 
-    this.instance.interceptors.response.use(
-      config.interceptors?.responseSuccessFn,
-      config.interceptors?.responseFailureFn
-    )
+    // this.instance.interceptors.response.use(
+    //   config.interceptors?.responseSuccessFn,
+    //   config.interceptors?.responseFailureFn
+    // )
   }
 
   request<T = any>(config: HYRequestConfig<T>) {
