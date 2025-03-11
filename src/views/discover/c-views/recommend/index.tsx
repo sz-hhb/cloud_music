@@ -13,7 +13,7 @@ const Recommend: FC<IProps> = () => {
 
   useEffect(() => {
     dispatch(fetchBannerDataAction())
-  }, [dispatch])
+  }, [])
 
   return (
     <div>
